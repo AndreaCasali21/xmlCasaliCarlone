@@ -96,8 +96,8 @@ namespace Libreriaxml_Casali_Carlone
             {
                 x++;
             }
-            lst_out.Items.Add(x);
-            
+            numeroromanzilbl.Content = x.ToString();
+
         }
 
         private void btn_ntitolo_Click(object sender, RoutedEventArgs e)
@@ -114,7 +114,7 @@ namespace Libreriaxml_Casali_Carlone
             {
                 x++;
             }
-            lst_out.Items.Add(x);
+            numerocopielbl.Content = x.ToString();
         }
 
         private void btn_elimina_Click(object sender, RoutedEventArgs e)
