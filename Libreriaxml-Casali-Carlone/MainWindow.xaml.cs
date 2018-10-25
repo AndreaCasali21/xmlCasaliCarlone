@@ -122,5 +122,32 @@ namespace Libreriaxml_Casali_Carlone
             xmlDoc.Nodes().OfType<XElement>().Elements("wiride").Elements("abstract").Remove();
             xmlDoc.Save(@"../../libri.xml");
         }
+
+        private void btn_modificagenere_Click(object sender, RoutedEventArgs e)
+        {
+            string titolo = txt_titolo2.Text;
+            string testo = txt_inputtesto.Text;
+            IEnumerable<XElement> Mod_Gen = from biblioteca in xmlDoc.Descendants("wiride")
+
+                                             where biblioteca.Element("titolo").Value == titolo
+
+                                             select biblioteca.Element("genere");
+            if(Mod_Gen.OfType<XElement>().First().Value == null)
+            {
+                xmlDoc.Element("Biblioteca")
+               .Elements("wiride")
+               .Where(x => x.Attribute("titolo").Value == titolo).First()
+               .AddBeforeSelf(
+               new XElement("genere", testo));
+
+
+            }
+            else
+            {
+                Mod_Gen.OfType<XElement>().First().Value = testo;
+            }
+
+                xmlDoc.Save(@"../../libri.xml");
+        }
     }
 }

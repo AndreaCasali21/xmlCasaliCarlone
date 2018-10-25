@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Libreriaxml_Casali_Carlone"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="664.286" Width="710.504">
     <Grid>
         <Button x:Name="btn_crea" Content="Crea file" HorizontalAlignment="Left" Margin="125,86,0,0" VerticalAlignment="Top" Width="100" Height="38" Click="btn_crea_Click"/>
         <ListBox x:Name="lst_out" HorizontalAlignment="Left" Height="318" Margin="385,71,0,0" VerticalAlignment="Top" Width="246"/>
@@ -15,6 +15,9 @@
         <Button x:Name="btn_ntitolo" Content="Num titolo" HorizontalAlignment="Left" Margin="34,244,0,0" VerticalAlignment="Top" Width="88" Height="29" Click="btn_ntitolo_Click"/>
         <TextBox x:Name="txt_numt" HorizontalAlignment="Left" Height="29" Margin="146,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btn_elimina" Content="Elimina" HorizontalAlignment="Left" Margin="34,355,0,0" VerticalAlignment="Top" Width="88" Height="24" Click="btn_elimina_Click"/>
+        <TextBox x:Name="txt_inputtesto" HorizontalAlignment="Left" Height="23" Margin="146,461,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btn_modificagenere" Content="Button" HorizontalAlignment="Left" Margin="34,422,0,0" VerticalAlignment="Top" Width="88" Height="24" Click="btn_modificagenere_Click"/>
+        <TextBox x:Name="txt_titolo2" HorizontalAlignment="Left" Height="23" Margin="146,422,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
