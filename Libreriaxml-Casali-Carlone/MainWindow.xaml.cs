@@ -120,7 +120,7 @@ namespace Libreriaxml_Casali_Carlone
         private void btn_elimina_Click(object sender, RoutedEventArgs e)
         {
             xmlDoc.Nodes().OfType<XElement>().Elements("wiride").Elements("abstract").Remove();
-            xmlDoc.Save(@"../../Data.xml");
+            xmlDoc.Save(@"../../libri.xml");
         }
     }
 }
