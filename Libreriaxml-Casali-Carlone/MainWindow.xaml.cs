@@ -64,7 +64,7 @@ namespace Libreriaxml_Casali_Carlone
                 lst_out.Items.Add(name);
             }
 
-            xmlDoc.Save(@"C:\Users\andrea.casali\source\repos\Libreriaxml-Casali-Carlone\Libreriaxml-Casali-Carlone\newLibri.xml");
+            xmlDoc.Save(@"C:\Users\andrea.casali\source\repos\Libreriaxml-Casali-Carlone\Libreriaxml-Casali-Carlone\libriShort.xml");
             btn_crea.IsEnabled = false;
         }
 
@@ -88,7 +88,7 @@ namespace Libreriaxml_Casali_Carlone
             int x = 0;
             IEnumerable<string> Num_romanzi = from biblioteca in xmlDoc.Descendants("wiride")
 
-                                              where biblioteca.Element("genere").Value == Genere
+                                              where biblioteca.Element("genere").Value.Contains(Genere)
 
                                               select biblioteca.Element("genere").Value;
 
@@ -139,8 +139,6 @@ namespace Libreriaxml_Casali_Carlone
                .Where(x => x.Attribute("titolo").Value == titolo).First()
                .AddBeforeSelf(
                new XElement("genere", testo));
-
-
             }
             else
             {
