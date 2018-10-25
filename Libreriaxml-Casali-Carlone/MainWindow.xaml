@@ -8,6 +8,7 @@
         Title="MainWindow" Height="664.286" Width="710.504">
     <Grid>
         <Button x:Name="btn_crea" Content="Crea file" HorizontalAlignment="Left" Margin="125,86,0,0" VerticalAlignment="Top" Width="100" Height="38" Click="btn_crea_Click"/>
+
         <ListBox x:Name="lst_out" HorizontalAlignment="Left" Height="163" Margin="314,71,0,0" VerticalAlignment="Top" Width="246"/>
         <Button x:Name="btn_titolo" Content="Elenco titoli" HorizontalAlignment="Left" Margin="34,174,0,0" VerticalAlignment="Top" Width="93" Height="29" Click="btn_titolo_Click"/>
         <TextBox x:Name="txt_aut" HorizontalAlignment="Left" Height="29" Margin="146,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
@@ -26,6 +27,7 @@
         <Label Content="Numero libri di genere &quot;romanzo&quot;:" HorizontalAlignment="Left" Margin="146,337,0,0" VerticalAlignment="Top" Width="193" Height="24"/>
         <Label x:Name="numerocopielbl" Content="" HorizontalAlignment="Left" Margin="368,285,0,0" VerticalAlignment="Top" Width="33"/>
         <Label x:Name="numeroromanzilbl" Content="" HorizontalAlignment="Left" Margin="344,335,0,0" VerticalAlignment="Top" Width="33"/>
+
 
     </Grid>
 </Window>
