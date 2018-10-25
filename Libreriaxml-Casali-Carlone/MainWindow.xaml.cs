@@ -121,6 +121,7 @@ namespace Libreriaxml_Casali_Carlone
         {
             xmlDoc.Nodes().OfType<XElement>().Elements("wiride").Elements("abstract").Remove();
             xmlDoc.Save(@"../../libri.xml");
+            MessageBox.Show("ciao");
         }
 
         private void btn_modificagenere_Click(object sender, RoutedEventArgs e)
