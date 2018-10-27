@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Creazione di una nuova biblioteca con LINQ to XML-->
+<Biblioteca>
+  <Libro>
+    <titolo>Se non ora, quando?</titolo>
+    <codice>M-FKB0GR01</codice>
+    <autore>Levi</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;Il &gt;balordo</titolo>
+    <codice>M-FKB0GX02</codice>
+    <autore>Chiara</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;La &gt;piccola spiaggia</titolo>
+    <codice>M-FKB0GX03</codice>
+    <autore>Lauretta</autore>
+  </Libro>
+  <Libro>
+    <titolo>Celluloide</titolo>
+    <codice>M-FKB0GX04</codice>
+    <autore>Pirro</autore>
+  </Libro>
+  <Libro>
+    <titolo>Sul ponte di Avignone</titolo>
+    <codice>M-FKB0GX05</codice>
+    <autore>Pizzuto</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;Il&gt; quinto evangelio</titolo>
+    <codice>M-FKB0GX06</codice>
+    <autore>Pomilio</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;Le &gt;luci della peste</titolo>
+    <codice>M-FKB0GX07</codice>
+    <autore>Pozza</autore>
+  </Libro>
+  <Libro>
+    <titolo>Cronache di poveri amanti</titolo>
+    <codice>M-FKB0GX08</codice>
+    <autore>Pratolini</autore>
+  </Libro>
+  <Libro>
+    <titolo>Diario sentimentale</titolo>
+    <codice>M-FKB0GX09</codice>
+    <autore>Pratolini</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;La &gt;costanza della ragione</titolo>
+    <codice>M-FKB0GX0A</codice>
+    <autore>Pratolini</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;Gli &gt;ermellini neri</titolo>
+    <codice>M-FKB0GX0B</codice>
+    <autore>Prisco</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;Un &gt;eroe del nostro tempo</titolo>
+    <codice>M-FKB0GX0C</codice>
+    <autore>Pratolini</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;Le &gt;ragazze di Sanfrediano</titolo>
+    <codice>M-FKB0GX0D</codice>
+    <autore>Pratolini</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;Lo &gt;scialo</titolo>
+    <codice>M-FKB0GX0E</codice>
+    <autore>Pratolini</autore>
+  </Libro>
+  <Libro>
+    <titolo>Metello</titolo>
+    <codice>M-FKB0GX0F</codice>
+    <autore>Pratolini</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;Il &gt;quartiere</titolo>
+    <codice>M-FKB0GX0G</codice>
+    <autore>Pratolini</autore>
+  </Libro>
+  <Libro>
+    <titolo>Giovinezza giovinezza</titolo>
+    <codice>M-FKB0GX0H</codice>
+    <autore>Preti</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;Il &gt;colore del cristallo</titolo>
+    <codice>M-FKB0GX0I</codice>
+    <autore>Prisco</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;Il &gt;padrino</titolo>
+    <codice>M-FKB0GX0J</codice>
+    <autore>Puzo</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;L' &gt;amore di lupo</titolo>
+    <codice>M-FKB0GX0K</codice>
+    <autore>Quarantotti Gambini</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;Il &gt;cavallo Tripoli</titolo>
+    <codice>M-FKB0GX0L</codice>
+    <autore>Quarantotti Gambini</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;La &gt;corsa di Falco</titolo>
+    <codice>M-FKB0GX0M</codice>
+    <autore>Quarantotti Gambini</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;I &gt;nostri simili</titolo>
+    <codice>M-FKB0GX0N</codice>
+    <autore>Quarantotti Gambini</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;L' &gt;onda dell'incrociatore</titolo>
+    <codice>M-FKB0GX0O</codice>
+    <autore>Quarantotti Gambini</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;Le &gt;redini bianche</titolo>
+    <codice>M-FKB0GX0P</codice>
+    <autore>Quarantotti Gambini</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;La &gt;rosa rossa</titolo>
+    <codice>M-FKB0GX0Q</codice>
+    <autore>Quarantotti Gambini</autore>
+  </Libro>
+  <Libro>
+    <titolo>Mai tardi</titolo>
+    <codice>M-FKB0GX0R</codice>
+    <autore>Revelli</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;I &gt;racconti</titolo>
+    <codice>M-FKB0GX0S</codice>
+    <autore>Rea</autore>
+  </Libro>
+  <Libro>
+    <titolo>Quota Albania</titolo>
+    <codice>M-FKB0GX0T</codice>
+    <autore>Rigoni Stern</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;L�&gt; dove soffia il mistral</titolo>
+    <codice>M-FKB0GX0U</codice>
+    <autore>Righini Ricci</autore>
+  </Libro>
+  <Libro>
+    <titolo>Amore di confine</titolo>
+    <codice>M-FKB0GX0V</codice>
+    <autore>Rigoni Stern</autore>
+  </Libro>
+  <Libro>
+    <titolo>Arboreto salvatico</titolo>
+    <codice>M-FKB0GX0W</codice>
+    <autore>Rigoni Stern</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;Il &gt;bosco degli urogalli</titolo>
+    <codice>M-FKB0GX0X</codice>
+    <autore>Rigoni Stern</autore>
+  </Libro>
+  <Libro>
+    <titolo>Uomini, boschi e api</titolo>
+    <codice>M-FKB0GX0Y</codice>
+    <autore>Rigoni Stern</autore>
+  </Libro>
+  <Libro>
+    <titolo>Storia di Tonle</titolo>
+    <codice>M-FKB0GX0Z</codice>
+    <autore>Rigoni Stern</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;Il &gt;sergente nella neve</titolo>
+    <codice>M-FKB0GX10</codice>
+    <autore>Rigoni Stern</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;1944 =millenovecentoquarantaquattro&gt;</titolo>
+    <codice>M-FKB0GX11</codice>
+    <autore>Ronchey</autore>
+  </Libro>
+  <Libro>
+    <titolo>Figlioli miei, marxisti immaginari</titolo>
+    <codice>M-FKB0GX12</codice>
+    <autore>Ronchey</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;La &gt;ragazza dei passi perduti</titolo>
+    <codice>M-FKB0GX13</codice>
+    <autore>Rossi</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;La &gt;stanza delle scimmie</titolo>
+    <codice>M-FKB0GX14</codice>
+    <autore>Rossi</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;Io &gt;speriamo che me la cavo</titolo>
+    <codice>M-FKB0GX15</codice>
+    <autore>D'Orta</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;Il &gt;fu Mattia Pascal</titolo>
+    <codice>M-FKB0GX16</codice>
+    <autore>Pirandello</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;Il &gt;fu Mattia Pascal</titolo>
+    <codice>M-FKB0GX17</codice>
+    <autore>Pirandello</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;Il &gt;fu Mattia Pascal</titolo>
+    <codice>M-FKB0GX18</codice>
+    <autore>Pirandello</autore>
+  </Libro>
+  <Libro>
+    <titolo>Manuale di cold reading</titolo>
+    <codice>M-FKB0GX19</codice>
+    <autore>Hyman</autore>
+  </Libro>
+  <Libro>
+    <titolo>Se questo � un uomo</titolo>
+    <codice>M-FKB0GX1A</codice>
+    <autore>Levi</autore>
+  </Libro>
+  <Libro>
+    <titolo>Palladion</titolo>
+    <codice>M-FKB0GX1B</codice>
+    <autore>Manfredi</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;La &gt;pavona</titolo>
+    <codice>M-FKB0GX1C</codice>
+    <autore>Rossi</autore>
+  </Libro>
+  <Libro>
+    <titolo>Melanzio</titolo>
+    <codice>M-FKB0GX1D</codice>
+    <autore>Rossi</autore>
+  </Libro>
+  <Libro>
+    <titolo>Vestivamo alla marinara</titolo>
+    <codice>M-FKB0GX1E</codice>
+    <autore>Agnelli</autore>
+  </Libro>
+  <Libro>
+    <titolo>Vangelo secondo Maria</titolo>
+    <codice>M-FKB0GX1F</codice>
+    <autore>Alberti</autore>
+  </Libro>
+  <Libro>
+    <titolo>Calda era la terra</titolo>
+    <codice>M-FKB0GX1G</codice>
+    <autore>Alessi</autore>
+  </Libro>
+  <Libro>
+    <titolo>Vent'anni</titolo>
+    <codice>M-FKB0GX1H</codice>
+    <autore>Alvaro</autore>
+  </Libro>
+  <Libro>
+    <titolo>Itinerario italiano</titolo>
+    <codice>M-FKB0GX1I</codice>
+    <autore>Alvaro</autore>
+  </Libro>
+  <Libro>
+    <titolo>Gente in Aspromonte</titolo>
+    <codice>M-FKB0GX1J</codice>
+    <autore>Alvaro</autore>
+  </Libro>
+  <Libro>
+    <titolo>L'et� breve</titolo>
+    <codice>M-FKB0GX1K</codice>
+    <autore>Alvaro</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;75 =Settantacinque&gt;racconti</titolo>
+    <codice>M-FKB0GX1L</codice>
+    <autore>Alvaro</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;Il&gt; trucco c'�</titolo>
+    <codice>M-FKB0GX1M</codice>
+    <autore>Polidoro</autore>
+  </Libro>
+  <Libro>
+    <titolo>Stavolta m'ammazzo sul serio</titolo>
+    <codice>M-FKB0GX1N</codice>
+    <autore>Amurri</autore>
+  </Libro>
+  <Libro>
+    <titolo>&lt;L'&gt;inverno dei Mongoli</titolo>
+    <codice>M-FKB0GX1O</codice>
+    <autore>Angelino</autore>
+  </Libro>
+</Biblioteca>

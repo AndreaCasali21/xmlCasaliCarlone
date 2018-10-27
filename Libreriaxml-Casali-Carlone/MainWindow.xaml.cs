@@ -30,41 +30,29 @@ namespace Libreriaxml_Casali_Carlone
 
         private void btn_crea_Click(object sender, RoutedEventArgs e)
         {           
-            IEnumerable<string> barcode = from biblioteca in XDocument.Load(@"../../libri.XML")
-                                                               .Elements("Biblioteca").Elements("wiride")
+            IEnumerable<string> barcode = from biblioteca in xmlDoc.Descendants("wiride")
                                           select biblioteca.Element("codice_scheda").Value;
-            IEnumerable<string> title = from biblioteca in XDocument.Load(@"../../libri.XML")
-                                                               .Elements("Biblioteca").Elements("wiride")
+            IEnumerable<string> title = from biblioteca in xmlDoc.Descendants("wiride")
                                         select biblioteca.Element("titolo").Value;
-            IEnumerable<string> author = from biblioteca in XDocument.Load(@"../../libri.XML")
-                                                                .Elements("Biblioteca").Elements("wiride").Elements("titolo")
-                                         select biblioteca.Element("responsabilita").Value;
-            IEnumerable<string> subject = from biblioteca in XDocument.Load(@"../../libri.XML")
-                                                                .Elements("Biblioteca").Elements("wiride")
-                                          select biblioteca.Element("descrittori_lgi").Value;
-            IEnumerable<string> description = from biblioteca in XDocument.Load(@"../../libri.XML")
-                                                                .Elements("Biblioteca").Elements("wiride")
-                                              select biblioteca.Element("soggetti").Value;
-            IEnumerable<string> category = from biblioteca in XDocument.Load(@"../../libri.XML")
-                                                                .Elements("Biblioteca").Elements("wiride")
-                                           select biblioteca.Element("genere").Value;
-            IEnumerable<string> media = from biblioteca in XDocument.Load(@"../../libri.XML")
-                                                                .Elements("Biblioteca").Elements("wiride")
-                                        select biblioteca.Element("genere").Value;
-            IEnumerable<string> publisher = from biblioteca in XDocument.Load(@"../../libri.XML")
-                                                                .Elements("Biblioteca").Elements("wiride").Elements("pubblicazione")
-                                            select biblioteca.Element("luogo").Value;
-            IEnumerable<string> publication = from biblioteca in XDocument.Load(@"../../libri.XML")
-                                                                .Elements("Biblioteca").Elements("wiride").Elements("pubblicazione")
-                                              select biblioteca.Element("editore").Value;
-
-
-            foreach (string name in title)
+            IEnumerable<string> author = from biblioteca in xmlDoc.Descendants("wiride").Elements("autore")
+                                         select biblioteca.Element("cognome").Value;
+            XDocument xmlDocument = new XDocument(
+                new XDeclaration("1.0", "utf-8", "yes"),
+                new XComment("Creazione di una nuova biblioteca con LINQ to XML"),
+                new XElement("Biblioteca"));
+            int x = 0;
+            foreach(string count in barcode)
             {
-                lst_out.Items.Add(name);
+                xmlDocument.Elements("Biblioteca").FirstOrDefault().Add(
+                    
+                    (new XElement("Libro",
+                    new XElement("titolo", title.ElementAt(x)),
+                    new XElement("codice", count),
+                    new XElement("autore", author.ElementAt(x))                    
+                    )));
+                x++;
             }
-
-            xmlDoc.Save(@"C:\Users\andrea.casali\source\repos\Libreriaxml-Casali-Carlone\Libreriaxml-Casali-Carlone\libriShort.xml");
+            xmlDocument.Save(@"C:\Users\andrea.casali\source\repos\Libreriaxml-Casali-Carlone\Libreriaxml-Casali-Carlone\libriShort.xml");
             btn_crea.IsEnabled = false;
         }
 
@@ -121,7 +109,6 @@ namespace Libreriaxml_Casali_Carlone
         {
             xmlDoc.Nodes().OfType<XElement>().Elements("wiride").Elements("abstract").Remove();
             xmlDoc.Save(@"../../libri.xml");
-            MessageBox.Show("ciao");
         }
 
         private void btn_modificagenere_Click(object sender, RoutedEventArgs e)
