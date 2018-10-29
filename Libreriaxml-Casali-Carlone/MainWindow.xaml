@@ -6,18 +6,28 @@
         xmlns:local="clr-namespace:Libreriaxml_Casali_Carlone"
         mc:Ignorable="d"
         Title="MainWindow" Height="664.286" Width="710.504">
-    <Grid>
+    <Grid Margin="0,0,2,0">
         <Button x:Name="btn_crea" Content="Crea file" HorizontalAlignment="Left" Margin="125,86,0,0" VerticalAlignment="Top" Width="100" Height="38" Click="btn_crea_Click"/>
-        <ListBox x:Name="lst_out" HorizontalAlignment="Left" Height="318" Margin="385,71,0,0" VerticalAlignment="Top" Width="246"/>
-        <Button x:Name="btn_titolo" Content="Cerca Tit" HorizontalAlignment="Left" Margin="34,186,0,0" VerticalAlignment="Top" Width="88" Height="29" Click="btn_titolo_Click"/>
-        <TextBox x:Name="txt_aut" HorizontalAlignment="Left" Height="29" Margin="141,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
-        <Button x:Name="btn_nrom" Content="Ricerca romanzi" HorizontalAlignment="Left" Margin="34,299,0,0" VerticalAlignment="Top" Width="88" Height="24" Click="btn_nrom_Click"/>
-        <Button x:Name="btn_ntitolo" Content="Num titolo" HorizontalAlignment="Left" Margin="34,244,0,0" VerticalAlignment="Top" Width="88" Height="29" Click="btn_ntitolo_Click"/>
-        <TextBox x:Name="txt_numt" HorizontalAlignment="Left" Height="29" Margin="146,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btn_elimina" Content="Elimina" HorizontalAlignment="Left" Margin="34,355,0,0" VerticalAlignment="Top" Width="88" Height="24" Click="btn_elimina_Click"/>
-        <TextBox x:Name="txt_inputtesto" HorizontalAlignment="Left" Height="23" Margin="146,461,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btn_modificagenere" Content="Modifica genere" HorizontalAlignment="Left" Margin="34,422,0,0" VerticalAlignment="Top" Width="88" Height="24" Click="btn_modificagenere_Click"/>
-        <TextBox x:Name="txt_titolo2" HorizontalAlignment="Left" Height="23" Margin="146,422,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+        <ListBox x:Name="lst_out" HorizontalAlignment="Left" Height="163" Margin="314,71,0,0" VerticalAlignment="Top" Width="246"/>
+        <Button x:Name="btn_titolo" Content="Elenco titoli" HorizontalAlignment="Left" Margin="34,174,0,0" VerticalAlignment="Top" Width="93" Height="29" Click="btn_titolo_Click"/>
+        <TextBox x:Name="txt_aut" HorizontalAlignment="Left" Height="29" Margin="146,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125"/>
+        <Button x:Name="btn_nrom" Content="Ricerca romanzi" HorizontalAlignment="Left" Margin="36,337,0,0" VerticalAlignment="Top" Width="88" Height="24" Click="btn_nrom_Click"/>
+        <Button x:Name="btn_ntitolo" Content="Numero copie" HorizontalAlignment="Left" Margin="36,282,0,0" VerticalAlignment="Top" Width="88" Height="29" Click="btn_ntitolo_Click"/>
+        <TextBox x:Name="txt_numt" HorizontalAlignment="Left" Height="29" Margin="148,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btn_elimina" Content="Elimina il tag abstract" HorizontalAlignment="Left" Margin="36,393,0,0" VerticalAlignment="Top" Width="128" Height="24" Click="btn_elimina_Click"/>
+        <TextBox x:Name="txt_inputtesto" HorizontalAlignment="Left" Height="23" Margin="148,519,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btn_modificagenere" Content="Cambia genere:" HorizontalAlignment="Left" Margin="36,460,0,0" VerticalAlignment="Top" Width="88" Height="24" Click="btn_modificagenere_Click"/>
+        <TextBox x:Name="txt_titolo2" HorizontalAlignment="Left" Height="23" Margin="148,460,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Inserire un titolo:" HorizontalAlignment="Left" Margin="148,429,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Inserire un valore:" HorizontalAlignment="Left" Margin="148,488,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Inserire il nome di un autore:" HorizontalAlignment="Left" Margin="146,143,0,0" VerticalAlignment="Top" Width="163"/>
+        <Label Content="Inserire il titolo di un libro:" HorizontalAlignment="Left" Margin="148,246,0,0" VerticalAlignment="Top" Width="163"/>
+        <Label Content="Numero copie:" HorizontalAlignment="Left" Margin="268,285,0,0" VerticalAlignment="Top" Width="95"/>
+        <Label Content="Numero libri di genere &quot;romanzo&quot;:" HorizontalAlignment="Left" Margin="146,337,0,0" VerticalAlignment="Top" Width="193" Height="24"/>
+        <Label x:Name="numerocopielbl" Content="" HorizontalAlignment="Left" Margin="368,285,0,0" VerticalAlignment="Top" Width="33"/>
+        <Label x:Name="numeroromanzilbl" Content="" HorizontalAlignment="Left" Margin="344,335,0,0" VerticalAlignment="Top" Width="33"/>
+
 
     </Grid>
 </Window>
